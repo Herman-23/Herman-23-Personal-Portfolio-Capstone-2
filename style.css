@@ -1,18 +1,13 @@
 .Part1 {
     background: linear-gradient(to right, rgb(182, 244, 146), rgb(51, 139, 147));
-    margin: 0;
-    height: 600px;
+    padding: 60px 0;
+    color: white;
 }
 
 .Herman {
     border-radius: 50%;
     height: 200px;
     width: 200px;
-}
-
-.ForDisplay {
-    display: grid;
-    
 }
 
 html, body {
@@ -25,30 +20,33 @@ body {
     flex-direction: column;
 }
 
-.content {
-    flex: 1 0 auto;
+header, footer {
+    flex-shrink: 0;
 }
 
-footer {
-    flex-shrink: 0;
-    background: linear-gradient(to right, rgb(182, 244, 146), rgb(51, 139, 147));
-    width: 100%;
-}
-@media screen and (max-width: 600px) {
-    body {
-        background: linear-gradient(to right, rgb(182, 244, 146), rgb(51, 139, 147));
-    }
-    
+section {
+    flex: 1 0 auto;
 }
 
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Playfair Display', serif;
 }
 
-p {
+p, li {
     font-family: 'Roboto', sans-serif;
 }
 
 ul {
     list-style-type: none;
+    padding: 0;
+}
+
+footer {
+    background: linear-gradient(to right, rgb(182, 244, 146), rgb(51, 139, 147));
+}
+
+@media screen and (max-width: 600px) {
+    body {
+        background: linear-gradient(to right, rgb(182, 244, 146), rgb(51, 139, 147));
+    }
 }
